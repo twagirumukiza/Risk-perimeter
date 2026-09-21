@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Le périmètre de risque n’est plus le SI. Une réflexion sur la transformation du risque cyber, de l’identité aux tiers, de l’IA à la chaîne de valeur." />
+  <meta name="author" content="Innocent TWAGIRUMUKIZA" />
+  <title>Le périmètre de risque n’est plus le SI | Innocent TWAGIRUMUKIZA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Risk Perimeter</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#modele" data-i18n="nav.model">Modèle historique</a></li>
+          <li><a href="#perimetre" data-i18n="nav.perimeter">Nouveau périmètre</a></li>
+          <li><a href="#extensions" data-i18n="nav.extensions">Extensions</a></li>
+          <li><a href="#question" data-i18n="nav.question">Question RSSI</a></li>
+          <li><a href="#grc" data-i18n="nav.grc">Rôle de la GRC</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
+          <span class="icon-sun" aria-hidden="true">☀</span>
+          <span class="icon-moon" aria-hidden="true">☾</span>
+        </button>
+        <div class="font-size-controls" role="group" aria-label="Taille du texte">
+          <button type="button" id="fontDecrease" aria-label="Réduire la taille">A−</button>
+          <button type="button" id="fontReset" aria-label="Taille par défaut">A</button>
+          <button type="button" id="fontIncrease" aria-label="Augmenter la taille">A+</button>
+        </div>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Réflexion GRC · Cybersécurité · Résilience</p>
+        <h1 data-i18n="hero.title">Le périmètre de risque n’est plus le SI</h1>
+        <p class="hero-sub" data-i18n="hero.subtitle">Le risque cyber s’étend désormais bien au-delà des frontières techniques de l’entreprise.</p>
+        <div class="hero-cta">
+          <a href="#modele" class="btn btn-primary" data-i18n="hero.cta">Explorer la réflexion</a>
+        </div>
+        <p class="hero-author">
+          <span data-i18n="hero.by">Une réflexion d’</span>
+          <strong>Innocent TWAGIRUMUKIZA</strong><br />
+          <span class="role" data-i18n="hero.role">Cybersecurity &amp; Risk Management Consultant</span>
+          <span class="author-links">
+            <a href="https://www.linkedin.com/in/innocent-twagirumukiza" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a href="https://twagirumukiza.github.io/Twagirumukiza-Innocent/" target="_blank" rel="noopener noreferrer" aria-label="Site web">Site web</a>
+          </span>
+        </p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="core">SI</div>
+      </div>
+    </section>
+
+    <!-- 1. Modèle historique -->
+    <section class="section" id="modele">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 data-i18n="model.title">Le modèle historique</h2>
+        </div>
+        <p class="lead" data-i18n="model.lead">Pendant longtemps, la cybersécurité a été pensée autour d’un principe relativement simple : protéger le système d’information de l’entreprise.</p>
+        
+        <div class="model-flow">
+          <div class="flow-item">
+            <div class="flow-icon">👤</div>
+            <span data-i18n="model.users">Utilisateurs</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item">
+            <div class="flow-icon">🌐</div>
+            <span data-i18n="model.network">Réseau</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item">
+            <div class="flow-icon">📦</div>
+            <span data-i18n="model.apps">Applications</span>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-item">
+            <div class="flow-icon">🗄️</div>
+            <span data-i18n="model.data">Données</span>
+          </div>
+        </div>
+
+        <blockquote class="transition-quote">
+          <p data-i18n="model.transition">Mais où s’arrête réellement le risque ?</p>
+        </blockquote>
+
+        <div class="prose">
+          <p data-i18n="model.p1">On protégeait les postes de travail, les serveurs, les réseaux, les applications et les données. On construisait des murs numériques autour du système d’information et l’on cherchait à empêcher les attaquants de les franchir.</p>
+          <p data-i18n="model.p2">Mais ce modèle est progressivement devenu insuffisant. Aujourd’hui, un attaquant n’a pas nécessairement besoin de « casser » le système pour y entrer. Il peut utiliser une identité légitime, compromettre un fournisseur, exploiter une dépendance logicielle, détourner une application SaaS ou tirer parti d’une mauvaise configuration d’un outil d’intelligence artificielle.</p>
+          <p data-i18n="model.p3"><strong>La véritable question devient : où commence et où s’arrête le risque de l’entreprise ?</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Nouveau périmètre -->
+    <section class="section section-alt" id="perimetre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 data-i18n="perimeter.title">Le nouveau périmètre</h2>
+        </div>
+        <p class="lead" data-i18n="perimeter.lead">Le périmètre n’est plus une frontière technique. Il devient un écosystème.</p>
+
+        <div class="ecosystem-diagram" role="img" aria-label="Schéma de l’écosystème de risque autour de l’entreprise">
+          <div class="eco-ring ring-outer">
+            <span class="eco-label" data-i18n="eco.ai">IA</span>
+            <span class="eco-label" data-i18n="eco.suppliers">Fournisseurs</span>
+            <span class="eco-label" data-i18n="eco.saas">SaaS / Cloud / API</span>
+            <span class="eco-label" data-i18n="eco.identities">Identités</span>
+            <span class="eco-label" data-i18n="eco.chain">Chaîne logicielle</span>
+          </div>
+          <div class="eco-ring ring-mid">
+            <span class="eco-label" data-i18n="eco.deps">Dépendances critiques</span>
+          </div>
+          <div class="eco-core">
+            <strong data-i18n="eco.enterprise">ENTREPRISE</strong>
+            <span>SI</span>
+          </div>
+          <div class="eco-bottom">
+            <span data-i18n="eco.continuity">Continuité d’activité</span>
+          </div>
+        </div>
+
+        <div class="prose">
+          <p data-i18n="perimeter.p1">Une entreprise moderne ne fonctionne plus seule. Elle dépend de fournisseurs cloud, d’éditeurs logiciels, de prestataires informatiques, de cabinets de conseil, de solutions SaaS, de sous-traitants, de partenaires commerciaux, d’API, de bibliothèques open source et parfois de dizaines ou de centaines de services numériques externes.</p>
+          <p data-i18n="perimeter.p2">À cela s’ajoutent les utilisateurs et leurs identités numériques. Un compte compromis peut permettre d’accéder à des ressources parfaitement légitimes. Un fournisseur compromis peut devenir une porte d’entrée vers l’entreprise. Une dépendance logicielle vulnérable peut affecter plusieurs applications simultanément.</p>
+          <p data-i18n="perimeter.p3"><strong>Le périmètre de sécurité devient donc progressivement un écosystème — beaucoup plus difficile à cartographier qu’un réseau informatique.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Les 5 extensions -->
+    <section class="section" id="extensions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 data-i18n="ext.title">Les 5 extensions du périmètre</h2>
+        </div>
+        <p class="lead" data-i18n="ext.lead">Chaque extension ouvre un ensemble de questions GRC essentielles.</p>
+
+        <div class="cards-grid">
+          <!-- Identités -->
+          <article class="ext-card" data-card="identity">
+            <div class="card-icon">🔐</div>
+            <h3 data-i18n="ext.identity.title">Identités</h3>
+            <p class="card-teaser" data-i18n="ext.identity.teaser">L’identité devient un objet de risque à part entière.</p>
+            <div class="card-body">
+              <ul>
+                <li data-i18n="ext.identity.q1">Qui utilise cette identité ?</li>
+                <li data-i18n="ext.identity.q2">Depuis quel terminal et quelle localisation ?</li>
+                <li data-i18n="ext.identity.q3">Pour accéder à quelle ressource, avec quels privilèges ?</li>
+                <li data-i18n="ext.identity.q4">Ce comportement est-il cohérent avec l’usage attendu ?</li>
+              </ul>
+              <p data-i18n="ext.identity.note">Un identifiant valide ne signifie plus nécessairement qu’une activité est légitime. La sécurité doit s’intéresser au contexte, pas uniquement à l’authentification.</p>
+            </div>
+          </article>
+
+          <!-- Tiers -->
+          <article class="ext-card" data-card="thirdparty">
+            <div class="card-icon">🤝</div>
+            <h3 data-i18n="ext.third.title">Tiers &amp; fournisseurs</h3>
+            <p class="card-teaser" data-i18n="ext.third.teaser">Le fournisseur devient une extension du SI.</p>
+            <div class="card-body">
+              <ul>
+                <li data-i18n="ext.third.q1">Quelles données lui sont confiées ?</li>
+                <li data-i18n="ext.third.q2">Quelles fonctions dépendent de lui ?</li>
+                <li data-i18n="ext.third.q3">Quelles connexions existent avec le SI ?</li>
+                <li data-i18n="ext.third.q4">Comment reprendre le contrôle en cas de compromission ?</li>
+              </ul>
+              <p data-i18n="ext.third.note">La question n’est plus « Ce fournisseur est-il sécurisé ? » mais « Que se passe-t-il pour mon entreprise s’il est compromis ou indisponible ? »</p>
+            </div>
+          </article>
+
+          <!-- IA -->
+          <article class="ext-card" data-card="ai">
+            <div class="card-icon">🤖</div>
+            <h3 data-i18n="ext.ai.title">Intelligence artificielle</h3>
+            <p class="card-teaser" data-i18n="ext.ai.teaser">Un outil, une dépendance, une surface d’attaque et un actif à gouverner.</p>
+            <div class="card-body">
+              <ul>
+                <li data-i18n="ext.ai.q1">Qui possède l’IA utilisée ?</li>
+                <li data-i18n="ext.ai.q2">Où sont traitées les données ?</li>
+                <li data-i18n="ext.ai.q3">Quels systèmes peut-elle interroger ? Quelles actions peut-elle effectuer ?</li>
+                <li data-i18n="ext.ai.q4">Que se passe-t-il si le fournisseur disparaît ou si le modèle change ?</li>
+              </ul>
+              <p data-i18n="ext.ai.note">L’IA complexifie l’équation : elle peut accéder à des données, des documents et parfois à des fonctions opérationnelles.</p>
+            </div>
+          </article>
+
+          <!-- Dépendances -->
+          <article class="ext-card" data-card="deps">
+            <div class="card-icon">🔗</div>
+            <h3 data-i18n="ext.deps.title">Dépendances technologiques</h3>
+            <p class="card-teaser" data-i18n="ext.deps.teaser">API, bibliothèques open source, chaînes logicielles critiques.</p>
+            <div class="card-body">
+              <ul>
+                <li data-i18n="ext.deps.q1">Quelles bibliothèques et services externes sont critiques ?</li>
+                <li data-i18n="ext.deps.q2">Quel est le niveau de confiance et de maintenance ?</li>
+                <li data-i18n="ext.deps.q3">Une vulnérabilité unique peut-elle impacter plusieurs applications ?</li>
+                <li data-i18n="ext.deps.q4">Comment détecter et réagir rapidement ?</li>
+              </ul>
+              <p data-i18n="ext.deps.note">Une dépendance logicielle vulnérable peut affecter plusieurs applications simultanément et devenir une porte d’entrée silencieuse.</p>
+            </div>
+          </article>
+
+          <!-- Chaîne de valeur -->
+          <article class="ext-card" data-card="valuechain">
+            <div class="card-icon">🏭</div>
+            <h3 data-i18n="ext.value.title">Chaîne de valeur</h3>
+            <p class="card-teaser" data-i18n="ext.value.teaser">Du SI à la continuité de l’activité.</p>
+            <div class="card-body">
+              <ul>
+                <li data-i18n="ext.value.q1">Quels éléments sont indispensables à la continuité de l’activité ?</li>
+                <li data-i18n="ext.value.q2">Où se trouvent les points de rupture critiques ?</li>
+                <li data-i18n="ext.value.q3">Comment le risque cyber se propage-t-il le long de la chaîne ?</li>
+                <li data-i18n="ext.value.q4">L’organisation peut-elle continuer à fonctionner si un maillon tombe ?</li>
+              </ul>
+              <p data-i18n="ext.value.note">Le risque cyber doit être rapproché de la chaîne de valeur. Une entreprise peut être parfaitement protégée sur son propre réseau et rester fortement exposée.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Question RSSI -->
+    <section class="section section-alt" id="question">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 data-i18n="question.title">Une question de RSSI différente</h2>
+        </div>
+
+        <div class="question-shift">
+          <div class="old-q">
+            <span class="badge badge-neg">✗</span>
+            <p data-i18n="question.old">« Sommes-nous sécurisés ? »</p>
+          </div>
+          <div class="arrow-shift">→</div>
+          <div class="new-q">
+            <span class="badge badge-pos">✓</span>
+            <p data-i18n="question.new">« De quoi notre activité dépend-elle ? »</p>
+          </div>
+        </div>
+
+        <p class="lead" data-i18n="question.lead">« Sommes-nous sécurisés ? » est une question presque impossible à satisfaire. Une organisation peut avoir des contrôles excellents et rester exposée à une dépendance qu’elle ne maîtrise pas.</p>
+
+        <div class="matrix-wrapper">
+          <table class="risk-matrix">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.dim">Dimension</th>
+                <th data-i18n="matrix.q">Question</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="matrix.identity">Identité</td>
+                <td data-i18n="matrix.identity.q">Qui peut agir ?</td>
+              </tr>
+              <tr>
+                <td data-i18n="matrix.third">Tiers</td>
+                <td data-i18n="matrix.third.q">Qui peut nous affecter ?</td>
+              </tr>
+              <tr>
+                <td data-i18n="matrix.tech">Technologie</td>
+                <td data-i18n="matrix.tech.q">De quoi dépendons-nous ?</td>
+              </tr>
+              <tr>
+                <td data-i18n="matrix.data">Données</td>
+                <td data-i18n="matrix.data.q">Où circulent-elles ?</td>
+              </tr>
+              <tr>
+                <td data-i18n="matrix.ai">IA</td>
+                <td data-i18n="matrix.ai.q">Qui décide et avec quels accès ?</td>
+              </tr>
+              <tr>
+                <td data-i18n="matrix.res">Résilience</td>
+                <td data-i18n="matrix.res.q">Que se passe-t-il si cela disparaît ?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Rôle de la GRC -->
+    <section class="section" id="grc">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 data-i18n="grc.title">Le nouveau rôle de la GRC</h2>
+        </div>
+        <p class="lead" data-i18n="grc.lead">La GRC ne doit plus seulement contrôler l’organisation. Elle doit comprendre son écosystème.</p>
+
+        <div class="prose">
+          <p data-i18n="grc.p1">Il ne s’agit plus seulement de vérifier que les contrôles de sécurité existent. Il faut comprendre les dépendances de l’entreprise, identifier celles qui sont critiques, évaluer les scénarios de compromission ou d’indisponibilité et déterminer si l’organisation peut continuer à fonctionner lorsqu’un élément de son écosystème tombe.</p>
+          <p data-i18n="grc.p2"><strong>La cartographie des risques ne devrait plus s’arrêter à la frontière de l’organisation. Elle devrait suivre les flux de données, les identités, les fournisseurs, les technologies et les dépendances critiques.</strong></p>
+          <p data-i18n="grc.p3">Autrement dit : le périmètre de risque doit suivre la chaîne de valeur.</p>
+        </div>
+
+        <div class="grc-chain">
+          <span data-i18n="chain.cyber">Cybersécurité</span>
+          <span class="chain-arrow">→</span>
+          <span data-i18n="chain.risk">Gestion des risques</span>
+          <span class="chain-arrow">→</span>
+          <span data-i18n="chain.third">Risques tiers</span>
+          <span class="chain-arrow">→</span>
+          <span data-i18n="chain.res">Résilience</span>
+          <span class="chain-arrow">→</span>
+          <span data-i18n="chain.comp">Conformité</span>
+          <span class="chain-arrow">→</span>
+          <span data-i18n="chain.ai">Gouvernance de l’IA</span>
+        </div>
+
+        <div class="refs">
+          <h3 data-i18n="grc.refs">Référentiels concernés</h3>
+          <ul class="refs-list">
+            <li>NIS2</li>
+            <li>DORA</li>
+            <li>CRA</li>
+            <li>ISO 27001</li>
+            <li>EBIOS RM</li>
+            <li>RGPD</li>
+            <li>ISO 42001</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Conclusion -->
+    <section class="section conclusion" id="conclusion">
+      <div class="container">
+        <div class="conclusion-inner">
+          <p class="conclusion-lead" data-i18n="conclusion.p1">Le système d’information de l’entreprise n’est plus seulement constitué de ce qu’elle possède.</p>
+          <p class="conclusion-lead" data-i18n="conclusion.p2">Il comprend aussi, dans une certaine mesure, tout ce dont elle dépend pour fonctionner.</p>
+          <p class="conclusion-final" data-i18n="conclusion.final">Le périmètre de risque n’est plus le SI.<br />C’est l’écosystème.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">FAQ</span>
+          <h2 data-i18n="faq.title">Foire aux questions</h2>
+        </div>
+        <p class="lead" data-i18n="faq.lead">Cybersécurité et géopolitique des risques</p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q1">Pourquoi la cybersécurité n’est-elle plus uniquement une question technique ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a1">Les conflits contemporains s’étendent aux réseaux, chaînes d’approvisionnement et infrastructures critiques. La cybersécurité devient une question de résilience stratégique face aux tensions géopolitiques.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q2">Une entreprise doit-elle être une cible politique ou militaire pour être exposée à un risque cyber lié à un conflit ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a2">Non. Une entreprise peut être touchée uniquement parce qu’elle appartient à un écosystème (cloud, télécoms, prestataires IT, logiciels, énergie, banques). Une attaque sur un maillon de la chaîne peut produire des effets en cascade.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q3">Pourquoi la supply chain est-elle devenue un champ de bataille ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a3">Les attaquants ciblent préférentiellement des fournisseurs moins protégés (prestataires informatiques, éditeurs de logiciels, intégrateurs, sous-traitants). La compromission d’un seul maillon peut ensuite ouvrir l’accès à plusieurs organisations.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q4">Le risque fournisseur peut-il encore être traité uniquement par un questionnaire annuel de conformité ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a4">Non. Il faut comprendre les dépendances réelles et anticiper les conséquences de l’indisponibilité d’un fournisseur critique pendant plusieurs jours ou semaines.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q5">Les infrastructures civiles sont-elles concernées par les conflits hybrides ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a5">Oui. Transport, énergie, télécommunications, finance, santé et administration deviennent des cibles naturelles. Une cyberattaque peut avoir des conséquences physiques et perturber le fonctionnement d’un pays.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q6">Toutes les cyberattaques ont-elles un objectif purement financier (ransomware) ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a6">Non. Les motivations peuvent être : collecte de renseignement, préparation d’une opération future, déstabilisation d’un secteur, pression économique, influence de l’opinion publique, ou test de capacités.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q7">Quel est le rôle de l’intelligence artificielle dans ce contexte ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a7">L’IA accélère les attaques (phishing, automatisation, personnalisation) et renforce la défense (détection, analyse, réponse). Elle crée aussi de nouvelles dépendances critiques (modèles, cloud, données, GPU, éditeurs) qui deviennent des questions de sécurité.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q8">La cybersécurité doit-elle se concentrer uniquement sur la prévention des attaques ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a8">Non. La prévention reste essentielle, mais insuffisante. Dans un contexte géopolitique instable, aucune organisation ne peut garantir le blocage de toutes les attaques. Il faut aussi anticiper : « Que se passe-t-il si nous sommes attaqués ? Combien de temps pouvons-nous fonctionner ? »</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q9">Le périmètre de risque se limite-t-il encore au système d’information (SI) ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a9">Non. Le SI n’est plus le périmètre unique. Le risque se situe également dans les identités, fournisseurs, clouds, partenaires, logiciels, IA, infrastructures, télécommunications, dépendances énergétiques et chaînes de valeur.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q10">Quelles sont les nouvelles questions que doit se poser un RSSI ou une direction des risques ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <div data-i18n-html="faq.a10">
+                <ul>
+                  <li>De quoi notre activité dépend-elle réellement ?</li>
+                  <li>Quelles dépendances pourraient devenir critiques en cas de crise géopolitique ?</li>
+                  <li>Que se passe-t-il si un fournisseur stratégique disparaît pendant 48 heures, une semaine ou un mois ?</li>
+                  <li>Sommes-nous capables de fonctionner en mode dégradé ?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.q11">Quelle est la définition de la cyber-résilience selon l’auteur ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq.a11">La cyber-résilience n’est pas seulement la capacité à empêcher la crise d’entrer dans l’organisation. C’est la capacité à continuer à fonctionner lorsque la crise est déjà là.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share -->
+    <section class="section share-section" id="share">
+      <div class="container">
+        <h2 class="share-title" data-i18n="share.title">Partager cette réflexion</h2>
+        <p class="share-desc" data-i18n="share.desc">Diffusez l’article ou importez-le sur votre site / intranet.</p>
+
+        <div class="share-buttons" role="group" aria-label="Partager">
+          <!-- LinkedIn -->
+          <a class="share-btn" data-share="linkedin" href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Partager sur LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <!-- X -->
+          <a class="share-btn" data-share="x" href="#" target="_blank" rel="noopener noreferrer" title="X" aria-label="Partager sur X">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a class="share-btn" data-share="facebook" href="#" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Partager sur Facebook">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <!-- WhatsApp -->
+          <a class="share-btn" data-share="whatsapp" href="#" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Partager sur WhatsApp">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <!-- Telegram -->
+          <a class="share-btn" data-share="telegram" href="#" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Partager sur Telegram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <!-- Reddit -->
+          <a class="share-btn" data-share="reddit" href="#" target="_blank" rel="noopener noreferrer" title="Reddit" aria-label="Partager sur Reddit">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 01.042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 014.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 01.14-.197.35.35 0 01.238-.028l2.914.616a1.214 1.214 0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 00-.231.094.33.33 0 000 .463c.842.841 2.484.917 2.961.917.477 0 2.105-.079 2.961-.917a.33.33 0 000-.463.325.325 0 00-.23-.094.35.35 0 00-.237.1c-.541.524-1.66.656-2.494.656-.834 0-1.952-.132-2.496-.656a.327.327 0 00-.234-.1z"/></svg>
+          </a>
+          <!-- Pinterest -->
+          <a class="share-btn" data-share="pinterest" href="#" target="_blank" rel="noopener noreferrer" title="Pinterest" aria-label="Partager sur Pinterest">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.378l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985 0h.032z"/></svg>
+          </a>
+          <!-- Teams -->
+          <a class="share-btn" data-share="teams" href="#" target="_blank" rel="noopener noreferrer" title="Microsoft Teams" aria-label="Partager sur Microsoft Teams">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.625 8.25v-2.25a.75.75 0 00-.75-.75h-5.25a.75.75 0 00-.75.75v2.25h-1.5V4.5A1.5 1.5 0 0113.875 3h5.25A1.5 1.5 0 0120.625 4.5v3.75h0zm-9.75 1.5H4.5A1.5 1.5 0 003 11.25v7.5A1.5 1.5 0 004.5 20.25h6.375A1.5 1.5 0 0012.375 18.75v-7.5A1.5 1.5 0 0010.875 9.75zm8.25 1.5h-5.25a.75.75 0 00-.75.75v6.75c0 .414.336.75.75.75h5.25a.75.75 0 00.75-.75v-6.75a.75.75 0 00-.75-.75zM8.25 15.375a1.875 1.875 0 110-3.75 1.875 1.875 0 010 3.75z"/></svg>
+          </a>
+          <!-- Copy link -->
+          <button type="button" class="share-btn share-btn-copy" id="copyLinkBtn" title="Copier le lien" aria-label="Copier le lien">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          </button>
+        </div>
+
+        <div class="import-box">
+          <h3 data-i18n="share.importTitle">Importer sur votre site</h3>
+          <p data-i18n="share.importDesc">Copiez le code ci-dessous pour intégrer un extrait ou un lien vers cette réflexion.</p>
+          <div class="import-actions">
+            <button type="button" class="btn btn-secondary" id="copyEmbedBtn" data-i18n="share.copyEmbed">Copier le code d’intégration</button>
+            <button type="button" class="btn btn-secondary" id="copyTextBtn" data-i18n="share.copyText">Copier le texte de l’article</button>
+          </div>
+          <p class="copy-feedback" id="copyFeedback" hidden></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-author">
+        <p data-i18n="footer.by">Une réflexion d’</p>
+        <p class="name">Innocent TWAGIRUMUKIZA</p>
+        <p class="role" data-i18n="footer.role">Cybersecurity &amp; Risk Management Consultant</p>
+        <p class="author-links">
+          <a href="https://www.linkedin.com/in/innocent-twagirumukiza" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <a href="https://twagirumukiza.github.io/Twagirumukiza-Innocent/" target="_blank" rel="noopener noreferrer">Site web</a>
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p data-i18n="footer.purpose">Contenu de référence destiné aux RSSI, Risk Managers, décideurs et professionnels de la GRC.</p>
+        <p class="legal" data-i18n="footer.legal">© 2025 Innocent TWAGIRUMUKIZA · Usage libre avec attribution · Non commercial sans autorisation</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
